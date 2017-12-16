@@ -30,13 +30,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 /* We start writing out flexbox here. The above is just page setup */
 
-/* reference for flex direction https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction*/
+/* https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp */
+
 .container {
   display:flex;
   border:10px solid goldenrod;
-  flex-direction: column-reverse;
   min-height: 100vh;
+  flex-wrap: wrap;
 }
 
-/*Cross Axis - Column, imaginary line that goes from top to bottom.*/
-/*Main Axis - Row, imaginary line that goes from left to rights.*/
+.box {
+  width: calc(33.333333333% - 20px);
+  /*Margin is not part of the box model where as padding is.*/
+  margin: 10px;
+}
