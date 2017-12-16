@@ -29,26 +29,21 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
-
-/* Align-items attribute: */
-/* https://css-tricks.com/almanac/properties/a/align-items/ */
+/*
+Remeber the 2 important things about justify content:
+- You need flex-wrap otherwise it won't take effect.
+- Only concerned with the cross action.
+*/
 
 .container {
-  align-items: center;
   display: flex;
   border: 10px solid mistyrose;
   height: 100vh;
-  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-content: center;
 }
 
-.box1 {
-  font-size: 30px;
-}
-
-.box3 {
-  font-size: 150px;
-}
-
-.box5 {
-  font-size: 200px;
+.box {
+  width: 33.33%;
 }
