@@ -29,10 +29,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
-/*
-It's like align item but you can use it on a case by case basis for 
-https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
-*/
 
 .container {
   display: flex;
