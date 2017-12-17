@@ -30,20 +30,29 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 /* We start writing out flexbox here. The above is just page setup */
 /*
-Remeber the 2 important things about justify content:
-- You need flex-wrap otherwise it won't take effect.
-- Only concerned with the cross action.
+It's like align item but you can use it on a case by case basis for 
+https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
 */
 
 .container {
   display: flex;
   border: 10px solid mistyrose;
   height: 100vh;
-  flex-wrap:wrap;
-  justify-content: center;
-  align-content: center;
+  align-items: flex-start;
 }
-
 .box {
   width: 33.33%;
+}
+
+.box2 {
+  padding-bottom: 200px;
+}
+
+.box6 {
+  padding-bottom: 0;
+}
+
+.box9 {
+  padding-bottom: 50px;
+  align-self: stretch;
 }
