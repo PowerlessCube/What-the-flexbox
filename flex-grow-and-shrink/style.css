@@ -29,16 +29,28 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
+/*
+flex: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+We have 3 properties that are packed into flex, when we have extra space how should we devide the space:
+- flex-grow: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+- flex-shrink: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
+- flex-basis: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+*/
 .container {
   display:flex;
 }
 
 .box1 {
-  flex:10 5 400px;
+  /* flex-basis: 400px;
+  flex-grow: 10;
+  flex-shrink: 5; */
+  /* The below flex attribute is the same as the above */
+  flex: 10 5 400px;
 }
 
 .box2 {
-  flex:1 1 400px;
+  /* flex-basis: 400px;
+  flex-grow: 1;
+  flex-shrink: 1; */
+  flex: 1 1 400px;
 }
-
-
